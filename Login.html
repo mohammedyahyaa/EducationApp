@@ -58,6 +58,9 @@
             padding: 12px 20px;
             font-style: italic ;
             font-size: 13px;
+			width: 450px;
+			height: 350px;
+		
 
         }
 
@@ -87,9 +90,9 @@
 	<div class="container">
 		<form class="login-box" action="Home.html" onsubmit="return validateForm()">
 			<h2>Log in</h2>
-			<input placeholder="user name" type="text" id="username" name="username">
+			<input placeholder="user name" type="text" id="username" name="username" required>
 			<div class="error" id="usernameError"></div>
-			<input placeholder="password" type="password" id="password" name="password">
+			<input placeholder="password" type="password" id="password" name="password" required>
 			<div class="error" id="passwordError"></div>
             <a href="Register.html">Or,Sign up</a>
 			<input type="submit" value="Login">
