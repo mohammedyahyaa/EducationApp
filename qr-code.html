@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Delivery Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Add styles for the layout */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+        padding: 20px;
+        max-width: 600px;
+      }
+      h1, h2 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Delivery Confirmation</h1>
+      <form>
+        <label for="qr-code">Scan the QR code:</label>
+        <input type="text" id="qr-code" name="qr-code" placeholder="Enter QR code">
+        <input onclick="increaseValue()" type="submit" value="Confirm Delivery">
+      </form>
+      <h2>Delivery Summary</h2>
+      <p>Books Received: <span id="books-received"></span></p>
+      <p>Book Info: Math Book<span id="book-info"></span></p>
+    </div>
+
+
+    <script>
+        function increaseValue() {
+          var valueElement = document.getElementById("books-received");
+          var value = parseInt(valueElement.innerHTML);
+          value++;
+          valueElement.innerHTML = value;
+        }
+      </script>
+  </body>
+</html>
