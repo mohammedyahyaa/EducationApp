@@ -1,71 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Survey Web Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="survey.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Survey 1</h1>
-      <h1>Subject (math book)</h1>
-      <h2>Questions</h2>
-      <form>
-        <label for="name">Is there any typying mistake خطأ بالطباعه </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your Answer "
-        />
-
-        <label for="email"
-          >Do you have section you want to rephrase إعادة صياغة</label
-        >
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Answer"
-        />
-
-        <label for="age"
-          >Do you have any comments on the book in general
-        </label>
-        <input type="number" id="age" name="age" placeholder="Enter your age" />
-        <h1>Survey 2</h1>
-        <h1>Subject (exam note) </h1>
-        <h2>Questions</h2>
-
-        <label for="name">How many papers did you receive </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your Answer "
-        />
-
-        
-        <label for="name">What are the questions you see it hard</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your Answer "
-        />
-
-        <label for="name">What are the questions you want to edit? </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your Answer "
-        />
-        
-
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surveys Page</title>
+  <link rel="stylesheet" href="surveyList.css">
+</head>
+<body>
+  <header>
+    <h1>Surveys Page</h1>
+  </header>
+  <main>
+    <section id="surveys">
+      <h2>Surveys</h2>
+      <ul>
+        <li>
+          <a href="mathBookSurvey.html">Survey 1 Created on Jan 1, 2023</a>
+          <!-- <p class="survey-date">Created on Jan 1, 2022</p> -->
+        </li>
+        <li> 
+          <a href="examNote.html" >Survey 2 exam Note Created on Dec 1, 2022   </a>
+         
+        </li>
+        <li>
+          <a href="#" >Survey 3 Created on Oct 1, 2022  </a>
+        </li>
+      </ul>
+    </section>
+    <section id="questions" style="display: none;">
+      <h2 id="survey-title"></h2>
+      <ul id="question-list">
+      </ul>
+    </section>
+  </main>
+ 
+</body>
 </html>
