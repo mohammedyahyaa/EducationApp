@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Compliants</h1>
-    </header>
-    <main>
-      <form>
-        
-        <h2>Complaint 1: The book was trashed and dirty</h2>
-        <label for="complaint-1">Please provide more details:</label>
-        <textarea id="complaint-1" name="complaint-1"></textarea>
-      
-        <h2>Complaint 2: The book typing was not clear</h2>
-        <label for="complaint-2">Please provide more details:</label>
-        <textarea id="complaint-2" name="complaint-2"></textarea>
-      
-        <h2>Complaint 3: I didn't receive the book and it is delayed</h2>
-        <label for="complaint-3">Please provide more details:</label>
-        <textarea id="complaint-3" name="complaint-3"></textarea>
-        
-        <input type="submit" value="Submit">
-      </form>      
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surveys Page</title>
+  <link rel="stylesheet" href="surveyList.css">
+</head>
+<body>
+  <header>
+    <h1>Compliants Page</h1>
+  </header>
+  <main>
+    <section id="surveys">
+      <h2>Compliants</h2>
+      <ul>
+        <li>
+          <a href="mathBookCompliants.html">Compliant 1 math book Created on Jan 1, 2023</a>
+          <!-- <p class="survey-date">Created on Jan 1, 2022</p> -->
+        </li>
+        <li> 
+          <a href="examNotesCompliants.html" >Compliant 2 exam Note Created on Dec 1, 2022   </a>
+         
+        </li>
+        <li>
+          <a href="#" >Compliant 3 Created on Oct 1, 2022  </a>
+        </li>
+      </ul>
+    </section>
+    <section id="questions" style="display: none;">
+      <h2 id="survey-title"></h2>
+      <ul id="question-list">
+      </ul>
+    </section>
+  </main>
+ 
+</body>
 </html>

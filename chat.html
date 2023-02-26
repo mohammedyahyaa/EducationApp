@@ -4,41 +4,36 @@
     <title>Chat</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="navStyle.css" /> -->
-
-	
   </head>
   <body>
-	<nav>
-        <div class="logo">
-          <h4>My Logo</h4>
-        </div>
-        <ul class="nav-links">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="compliants.html">complaints</a></li>
-          <li><a href="survey.html">Survey</a></li>
-          <button class="add-btn">Add New Chat</button>
-
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
+    <nav>
+      <div class="logo">
+        <h4>My Logo</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="compliants.html">complaints</a></li>
+        <li><a href="survey.html">Survey</a></li>
+        <button class="add-btn">Add New Chat</button>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
 
     <div class="chat-container">
       <div class="chat-sidebar">
-        <div class="sidebar-header">
-        
-        </div>
+        <div class="sidebar-header"></div>
         <ul class="contacts-list">
-
           <div class="search-box">
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..." />
           </div>
-          <li class="contact">
+          <li 
+          onclick="hideDiv()"   class="contact">
             <div class="contact-avatar">
-              <img src="Images/Contact.png" alt="Contact Avatar">
+              <img src="Images/Contact.png" alt="Contact Avatar" />
             </div>
             <div class="contact-info">
               <h2 class="contact-name">contact 1</h2>
@@ -48,25 +43,29 @@
               <p>10:15 AM</p>
             </div>
           </li>
-          <li class="contact">
+          <li onclick="show()" class="contact">
             <div class="contact-avatar">
-              <img src="Images/Contact.png" alt="Contact Avatar">
+              <img src="Images/Contact.png" alt="Contact Avatar" />
             </div>
             <div class="contact-info">
               <h2 class="contact-name">contact 2</h2>
-              <p class="contact-last-message">I'm good, thanks. How about you?</p>
+              <p class="contact-last-message">
+                I'm good, thanks. How about you?
+              </p>
             </div>
             <div class="contact-time">
               <p>10:20 AM</p>
             </div>
           </li>
-          <li class="contact">
+          <li onclick="showContact3()" class="contact">
             <div class="contact-avatar">
-              <img src="Images/Contact.png" alt="Contact Avatar">
+              <img src="Images/Contact.png" alt="Contact Avatar" />
             </div>
             <div class="contact-info">
               <h2 class="contact-name">contact 3</h2>
-              <p class="contact-last-message">I'm good, thanks. How about you?</p>
+              <p class="contact-last-message">
+                I'm good, thanks. How about you?
+              </p>
             </div>
             <div class="contact-time">
               <p>10:20 AM</p>
@@ -74,26 +73,28 @@
           </li>
           <li class="contact">
             <div class="contact-avatar">
-              <img src="Images/Contact.png" alt="Contact Avatar">
+              <img src="Images/Contact.png" alt="Contact Avatar" />
             </div>
             <div class="contact-info">
               <h2 class="contact-name">contact 4</h2>
-              <p class="contact-last-message">I'm good, thanks. How about you?</p>
+              <p class="contact-last-message">
+                I'm good, thanks. How about you?
+              </p>
             </div>
             <div class="contact-time">
               <p>10:20 AM</p>
             </div>
           </li>
-         
-          
 
           <li class="contact">
             <div class="contact-avatar">
-              <img src="Images/Contact.png" alt="Contact Avatar">
+              <img src="Images/Contact.png" alt="Contact Avatar" />
             </div>
             <div class="contact-info">
               <h2 class="contact-name">contact 6</h2>
-              <p class="contact-last-message">I'm good, thanks. How about you?</p>
+              <p class="contact-last-message">
+                I'm good, thanks. How about you?
+              </p>
             </div>
             <div class="contact-time">
               <p>10:20 AM</p>
@@ -101,9 +102,64 @@
           </li>
         </ul>
       </div>
-    
-      <div class="chat-area">
-        
+
+      <!-- hidden chat-area for contact 2 -->
+
+      <div id="myDiv" style="display: none" class="chat-area">
+        <div class="chat-header">
+          <img src="Images/Contact.png" alt="Contact 1" />
+          <h2 class="contact-name">Contact 2</h2>
+        </div>
+        <div class="chat-box">
+          <div class="message from-me">
+            <p class="message-text">Good Morning</p>
+            <span class="message-time">9:35 AM</span>
+          </div>
+          <div class="message">
+            <p class="message-text">Good day</p>
+            <span class="message-time">9:36 AM</span>
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Type your message..."
+          />
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+
+      <!-- hidden chat-area for contact 3 -->
+
+      <div id="div3" style="display: none" class="chat-area">
+        <div class="chat-header">
+          <img src="Images/Contact.png" alt="Contact 1" />
+          <h2 class="contact-name">Contact 3</h2>
+        </div>
+        <div class="chat-box">
+          <div class="message from-me">
+            <p class="message-text">Hello, can you help ?</p>
+            <span class="message-time">9:35 AM</span>
+          </div>
+          <div class="message">
+            <p class="message-text">Hi, sure </p>
+            <span class="message-time">9:36 AM</span>
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Type your message..."
+          />
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+
+      <!-- main chat area -->
+
+      <div id="chat-area" class="chat-area">
         <div class="chat-header">
           <img src="Images/Contact.png" alt="Contact 1" />
           <h2 class="contact-name">Contact 1</h2>
@@ -147,15 +203,49 @@
             type="text"
             class="input-field"
             placeholder="Type your message..."
-
-            
-            
           />
           <button class="send-button">Send</button>
         </div>
       </div>
     </div>
+    <script>
+      function hideDiv() {
+       
+        var div = document.getElementById("myDiv");
+        var div2 = document.getElementById("chat-area");
+        var div3 = document.getElementById("div3");
+        // if (div.style.display === "none") {
+        //   div.style.display = "block";
+        // } else {
+        //   div.style.display = "none";
+        // }
 
-    
+        div.style.display = "none";
+        div3.style.display = "none";
+        div2.style.display = "block";
+      }
+
+      function show() {
+        var div = document.getElementById("myDiv");
+        var div2 = document.getElementById("chat-area");
+        var div3 = document.getElementById("div3");
+
+
+
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div.style.display = "block";
+      }
+
+      function showContact3() {
+        var div = document.getElementById("myDiv");
+        var div2 = document.getElementById("chat-area");
+        var div3 = document.getElementById("div3");
+
+        div.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "block";
+      }
+    </script>
   </body>
 </html>
