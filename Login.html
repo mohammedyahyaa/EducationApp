@@ -89,13 +89,13 @@
 <body>
 	<div class="container">
 		<form class="login-box" action="Home.html" onsubmit="return validateForm()">
-			<h2>Log in</h2>
-			<input placeholder="user name" type="text" id="username" name="username" required>
+			<h2>تسجيل الدخول</h2>
+			<input placeholder="اسم المستخدم" type="text" id="username" name="username" required>
 			<div class="error" id="usernameError"></div>
-			<input placeholder="password" type="password" id="password" name="password" required>
+			<input placeholder="كلمة المرور" type="password" id="password" name="password" required>
 			<div class="error" id="passwordError"></div>
-            <a href="Register.html">Or,Sign up</a>
-			<input type="submit" value="Login">
+            <a href="Register.html">تسجيل مستخدم جديد</a>
+			<input type="submit" value="تسجيل الدخول">
 		</form>
 	</div>
 
@@ -105,14 +105,14 @@
 			var password = document.forms["loginForm"]["password"].value;
 
 			if (username == "") {
-				document.getElementById("usernameError").innerHTML = "Username is required";
+				document.getElementById("usernameError").innerHTML = "يجب إدخال اسم المستخدم";
 				return false;
 			} else {
 				document.getElementById("usernameError").innerHTML = "";
 			}
 
 			if (password == "") {
-				document.getElementById("passwordError").innerHTML = "Password is required";
+				document.getElementById("passwordError").innerHTML = "يجب إدخال كلمة المرور ";
 				return false;
 			} else {
 				document.getElementById("passwordError").innerHTML = "";

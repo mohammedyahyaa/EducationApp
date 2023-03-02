@@ -68,35 +68,35 @@
   </head>
   <body>
     <form onsubmit="return validateForm()" action="Login.html" >
-      <h2>Register Your Data</h2>
+      <h2>برجاء إدخال بياناتك</h2>
 
-      <label for="FirstName">FirstName:</label>
+      <label for="FirstName">الاسم الاول</label>
       <input
         type="text"
         id="FirstName"
         name="FirstName"
-        placeholder="Your FirstName.."
+        placeholder="الاسم الاول"
       />
       <span class="error" id="name-error"></span>
 
-      <label for="LastName">LastName:</label>
+      <label for="LastName">الاسم الاخير</label>
       <input
         type="text"
         id="LastName"
         name="LastName"
-        placeholder="Your LastName.."
+        placeholder="الاسم الاخير"
       />
       <span class="error" id="name-error"></span>
 
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" placeholder="Your email.." />
+      <label for="email">البريد الالكتروني</label>
+      <input type="text" id="email" name="email" placeholder="البريد الالكتروني" />
       <span class="error" id="name-error"></span>
 
-      <label for="city">City:</label>
-      <input type="text" id="city" name="city" placeholder="Your city.." />
+      <label for="city">المدينه</label>
+      <input type="text" id="city" name="city" placeholder="مدينتك" />
       <span class="error" id="city-error"></span>
 
-      <label for="district">District</label>
+      <label for="district">نوع الحساب</label>
       <select id="school" name="school">
         <option value="school">School</option>
         <option value="free">Free</option>
@@ -104,11 +104,11 @@
       </select>
       <span class="error" id="school-error"></span>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject.." />
+      <label for="subject">الموضوع</label>
+      <input type="text" id="subject" name="subject" placeholder="الموضوع" />
       <span class="error" id="subject-error"></span>
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="تسجيل" />
     </form>
 
     <script>
