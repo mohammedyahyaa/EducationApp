@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Navigation Example</title>
+    <style>
+      /* Set up basic styles for page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      /* Style the navigation menu */
+      .nav {
+        background-color:  #1da1f2;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .nav a {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Style the list of items */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      li:hover {
+        background-color: #f2f2f2;
+      }
+      /* Set up responsive design for page */
+      @media (max-width: 768px) {
+        .nav a {
+          padding: 10px;
+        }
+        li {
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation menu -->
+    <div class="nav">
+      <a href="#">الصفحه الرئيسيه</a>
+      <a href="#">المحادثه</a>
+      <a href="#">التواصل معنا</a>
+    </div>
+    
+    <!-- List of items -->
+    <ul>
+      <li onclick="window.location.href='page1.html';">مراجعة البيانات</li>
+      <li onclick="window.location.href='page2.html';">اخذ موافقة المندوب</li>
+      <li onclick="window.location.href='page3.html';">اخذ موافقة المشرف</li>
+      <li onclick="window.location.href='page3.html';">ارسال كود التنشيط</li>
+    </ul>
+  </body>
+</html>
